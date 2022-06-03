@@ -1,0 +1,178 @@
+<!doctype html>
+<title>lap4_layout</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 70vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+   nav {
+    background: grey;
+    
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 15vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 2em;
+  }
+  header {
+	font-family: "Merriweather", serif;
+	font-size : large;
+	text-align : center;
+	text-transform : uppercase;
+	background-image : url("rect.jpg");
+	}
+body {
+	font-family: 'Grape Nuts', cursive;
+	font-size : 16px;
+	line-height: 1.5;
+	background : #eef;
+	text-align : justify;
+	}
+main {
+  width: 100%;
+  display: flex;
+}
+article, aside, footer, header, menu, nav, section {
+display: block;
+}
+articles , sections{ 
+	margin : 20px;
+	}
+images, nav, texts , aside {
+	padding: 20px;
+	}	
+texts{
+	margin : 5px ;
+	}
+images {
+	width : 25% ;
+	float : left;
+	clear: both;
+}
+aside {
+  width: 20%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: rightwards;
+  font-style: italic;
+  background-color: lightgray;
+}
+nav {
+	float : right;
+}
+</style>
+<body>
+  <header><h1> <img style="position: relative;
+top: -50px;
+left: 50px;" align="left" width="110" height="134" src=  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wikipedia-logo-v2-ro.svg/1200px-Wikipedia-logo-v2-ro.svg.png" >  </h1>   
+  <h1 align="center"> HTML (HyperText Markup Language) </header>
+  <nav><a href="#About html" > About html </a> | <a href="#History" > History </a> | <a href="#Main Elements" > Main Elements </a> | <a href="#Versions" > Versions </a> | <a href="#References" > References </a></nav>
+  <div id="main">
+   <section> 
+    <article>
+       <img  src="https://upload.wikimedia.org/wikipedia/commons/d/de/HTML5_oval_logo.png" height="200" width="190" align="right"> 
+      <table style="width:25% ; float:left;">
+  <tr>
+    <td id="About html">About HTML</td>
+  </tr>
+  <tr>
+   <td>EThe HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages.</td>
+  </tr>
+  </table>
+  </article>
+     
+         <article>
+      <table style="width:40%;float:clear; position: relative;top: -65px; left: 30px;">
+  <tr>
+    <td id="History">History</td>
+  </tr>
+  <tr>
+   <td>The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was
+HTML 4.01, which became an official standard in December 1999.Another version, XHTML, was a rewrite of HTML as an XML language. XML is a standard markup language that is used to create other markup languages. Hundreds of XML languages are in use today, including GML (Geography Markup Language), MathML, MusicML, and RSS (Really Simple Syndication). Since each of these languages was written in a common language (XML), their content can easily be shared across applications. This makes XML potentially very powerful, and it's no surprise that the W3C would create an XML version of HTML (again, called XHTML). XHTML became an official standard in 2000, and was updated in 2002. XHTML is very similar to HTML, but has stricter rules. Strict rules are necessary for all XML languages, because without it, interoperability between applications would be impossible. You'll learn more about the differences between HTML and XHTML in Unit 2. Most pages on the Web today were built using either HTML
+4.01 or XHTML 1.0. However, in recent years, the W3C (in collaboration with another organization, the WHATWG), has been working on a brand new version of HTML, HTML5. Currently (2011), HTML5
+is still a draft specification, and is not yet an official standard. However, it is already widely supported by browsers and other web-enabled devices, and is the way of the future. Therefore,
+HTML5 is the primary language
+taught in this course.</td>
+  </tr>
+  </table>
+  </article>
+        <h2 id="Main Elements"> Main Elements </h2> 
+    <article>  
+	   <p><big>HTML documents imply a structure of nested HTML elements. These are indicated in the document by HTML tags, enclosed in angle brackets like:
+	   <ol>
+	    <li>html</li>
+		<li>head</li>
+	    <li>title</li>
+	    <li>body</li>
+        <li>p,h1,...</li> </ol> </big> </p>
+	</article> 
+     
+      <h2 id="Versions"> Versions </h2>  
+       <article> 
+	   <table border="1">
+	    <tr>
+		 <th>version</th>
+		 <th>release date</th>
+        </tr>
+        
+	    <tr>
+		 <td>HTML 1.0</td>
+		 <td align="center">1992</td>
+        </tr>
+        
+	    <tr>
+		 <td>HTML 2.0</td>
+		 <td align="center">1995</td>
+        </tr>
+        
+	    <tr>
+		 <td>HTML 3.0</td>
+		 <td align="center">1996</td>
+        </tr>
+       
+	    <tr>
+		 <td>HTML 4.0</td>
+		 <td align="center">1997</td>
+        </tr>
+       
+	    <tr>
+		 <td>HTML 5</td>
+		 <td align="center"> 2008</td>
+        </tr>
+       </table>  
+        </article> 
+
+  </section>    
+   
+    <aside><h2 id="References"> References </h2> 
+		 <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"> wikipedia </a> |
+		 <a target="_blank" href="https://www.washington.edu/accesscomputing/webd2/student/unit1/module3/html_history.html"> washington.edu </a> |
+		 <a target="_blank" href="https://turbofuture.com/computers/What-is-HTML5_"> turbofuture </a>  </aside>
+  </div>
+  <footer><p> name : Saeed Sunbul</p>
+        <a href=" "> s441017070@st.uqu.edu.sa </a></footer>
+</body>
+  </html>
